@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Calculator</title>
+      <link rel="stylesheet" href="calculator.css" type="text/css" />
+       <script type="text/javascript">
+           var Accumulator=0;
+           var accumulatorSet=false;
+           var Display=0;
+           var displaySet=false;
+           var Fraction=0;
+           var dotSet=false;
+           function displayNum(digit) {
+               var displayTxt = document.getElementById("display").value;
+               displayTxt = displayTxt + digit;
+               document.getElementById("display").value = displayTxt;
+           }
+           function displayDot() {
+               var displayTxt = document.getElementById("display").value;
+               if ( !dotSet ) {
+                   displayTxt = displayTxt + ".";
+                   document.getElementById("display").value = displayTxt;
+                   dotSet = true;
+               }
+           }
+           function turnOff() {
+           }
+           function doMult() {
+           }
+           function doADD() {
+               var displayTxt = document.getElementById("display").value;
+               if( !accumulatorSet ) {
+                   Accumulator = Display;
+                   accumulatorSet = true;
+               }
+           }
+           function doSub() {
+           }
+           function doDiv() {
+           }
+           function doEqual() {
+           }
+       </script>
+   </head>
+   <body>
+      <div id="calculatorBody">
+         <div id="displaySection">
+            <input type="text" id="display" size="25" />
+         </div>
+         <div id="buttonRow1" class="buttonRow">
+            <ul>
+               <li><input id"buttonC" type="button" class="button" value="C" onclick="script"/></li>
+               <li><input id"buttonCE" type="button" class="button" value="CE" onclick="script"/></li>
+               <li><input id"buttonSIGN" type="button" class="button" value="+/-" onclick="script"/></li>
+               <li><input id"buttonPWR" type="button" class="pwrButton" value="PWR" onclick="turnOff()"/></li>
+            </ul>
+         </div>
+         <div id="buttonRow2" class="buttonRow">
+            <ul>
+               <li><input id"button7" type="button" class="button" value="7" onclick="displayNum(7)"/></li>
+               <li><input id"button8" type="button" class="button" value="8" onclick="displayNum(8)"/></li>
+               <li><input id"button9" type="button" class="button" value="9" onclick="displayNum(9)"/></li>
+               <li><input id"buttonOPtimes" type="button" class="button" value="*" onclick="doMult()"/></li>
+            </ul>
+         </div>
+         <div id="buttonRow3" class="buttonRow">
+            <ul>
+               <li><input id"button4" type="button" class="button" value="4" onclick="displayNum(4)"/></li>
+               <li><input id"button5" type="button" class="button" value="5" onclick="displayNum(5)"/></li>
+               <li><input id"button6" type="button" class="button" value="6" onclick="displayNum(6)"/></li>
+               <li><input id"buttonOPdive" type="button" class="button" value="/" onclick="doDiv()"/></li>
+            </ul>
+         </div>
+         <div id="buttonRow4" class="buttonRow">
+            <ul>
+               <li><input id"button1" type="button" class="button" value="1" onclick="displayNum(1)"/></li>
+               <li><input id"button2" type="button" class="button" value="2" onclick="displayNum(2)"/></li>
+               <li><input id"button3" type="button" class="button" value="3" onclick="displayNum(3)"/></li>
+               <li><input id"buttonOPadd" type="button" class="button" value="+" onclick="doAdd()"/></li>
+            </ul>
+         </div>
+         <div id="buttonRow5" class="buttonRow">
+            <ul>
+               <li><input id"button0" type="button" class="button" value="0" onclick="script"/></li>
+               <li><input id"buttonDOT" type="button" class="button" value="." onclick="displayDot()"/></li>
+               <li><input id"buttonOPequlas" type="button" class="button" value="=" onclick="doEqual()/></li>
+               <li><input id"buttonOPsub" type="button" class="button" value="-" onclick="doSub()"/></li>
+            </ul>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    width:30%;
+    height:100%;
+    margin-left:auto;
+	margin-right:auto;
+}
+
+#calculatorBody {
+    margin:8px:
+	width:90%; 
+    border-style:solid;
+    border-width:2px;
+    background-color: black;
+}
+
+#displaySection {
+    margin-left:auto;
+	margin-right:auto;
+	width:95%;
+    border-style:solid;
+    border-width:2px;
+}
+
+#display {
+    margin-left:auto;
+	margin-right:auto;
+    display:block;
+	width:90%;
+    border-style:solid;
+    border-width:2px;
+    font-size:1.5em;
+    background-color: white;
+    
+}
+
+.buttonRow {
+    margin-left:auto;
+	margin-right:auto;
+	width:95%;
+    display:block;
+	padding:3px;
+/*	height:25px;  */
+    border-style:solid;
+    border-width:2px;
+    overflow: hidden;
+}
+
+.buttonRow ul {
+    margin-left:auto;
+	margin-right:auto;
+    margin-top: 0px;
+    list-style-type:none;
+/*    border-style:solid;
+    border-width:2px; 
+*/
+}
+
+.buttonRow li {
+    width:20%;
+	margin:2px;
+    padding: 2;
+	display:block;
+	float:left;
+/*	height:90%;   */
+/*    border-style:solid;
+    border-width:1px;
+*/
+}
+.buttonRow input:hover{
+    background-color: slategray;
+}
+
+.button {
+    margin-left:auto;
+	margin-right:auto;
+    margin-top: 0px;
+    padding:2px;
+    width:90%;
+    font-size:1.5em;
+    border-color: gray;
+    background-color: silver;
+}
+.pwrButton {
+    background-color: red;
+    margin-left:auto;
+	margin-right:auto;
+    margin-top: 0px;
+    padding:2px;
+    width:95%;
+    font-size:1.5em;
+    border-color: gray;
+    background-color: red;
+}
